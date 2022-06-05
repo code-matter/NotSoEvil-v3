@@ -1,0 +1,197 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: $beige;
+}
+
+#root,
+.page-wrap {
+    height: 100%;
+}
+
+.page-wrap {
+    display: flex;
+    flex-flow: column;
+}
+
+.page-content,
+.content-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.error-display {
+    h1 {
+        color: $red;
+    }
+}
+
+.error-display .error-content,
+.e-404-page .error-content {
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        line-height: 46px;
+        text-decoration: none;
+
+        @include icon {
+            transform: translateY(2px);
+        }
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+@include not-mobile {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@include mobile {
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+.ant-modal {
+    &-content {
+        border-radius: $radius;
+    }
+
+    h3 {
+        color: $grey;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+}
+
+.ant-popover {
+    &-arrow {
+        display: none !important;
+    }
+
+    &-inner {
+        border-radius: $radius-sm;
+    }
+
+    &-placement-bottom,
+    &-placement-bottomLeft,
+    &-placement-bottomRight {
+        padding-top: 2px;
+    }
+
+    &.ant-popconfirm {
+        .ant-popover-message-title {
+            font-weight: 500;
+            font-size: 12px;
+            max-width: 260px;
+        }
+
+        .ant-popover-buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            button.ant-btn {
+                height: 32px;
+                font-size: 12px;
+                border-radius: $radius-ex-sm;
+                padding: 0 16px;
+            }
+        }
+    }
+}
+
+.ant-tooltip {
+    max-width: 600px;
+    font-size: small;
+
+    b {
+        font-weight: bolder;
+    }
+
+    &-arrow {
+        display: none !important;
+    }
+
+    &-inner {
+        border-radius: $radius-sm;
+        padding: 8px 12px;
+    }
+}
+
+.ant-message {
+    &-warning {
+        display: flex;
+        padding-top: 4px;
+
+        > :last-child {
+            display: flex;
+            flex-flow: column;
+            text-align: left;
+            margin-top: -2px;
+
+            b {
+                margin-bottom: 6px;
+                font-weight: 700;
+            }
+
+            ul {
+                background: rgba($lightgrey, 0.1);
+                color: $grey;
+                font-size: 12px;
+                border-radius: 6px;
+                padding: 12px 18px 12px 30px;
+                margin: 4px 0;
+
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+
+.ant-tabs {
+    &-tab {
+        color: $lightgrey;
+
+        &-btn:active,
+        &-btn:focus,
+        &-remove:active,
+        &-remove:focus {
+            color: darken($mc, 10);
+        }
+
+        &:hover {
+            color: $mc;
+        }
+
+        &.ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: $mc;
+            font-weight: 700;
+        }
+    }
+
+    &-ink-bar {
+        background: $mc;
+    }
+}
+
+.ant-switch-checked {
+    background: $green;
+}
+
+.ant-checkbox-checked {
+    span.ant-checkbox-inner {
+        background-color: rgba($green, 0.5);
+        border-color: $green;
+    }
+}

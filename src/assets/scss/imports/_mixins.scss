@@ -1,0 +1,42 @@
+@mixin icon {
+    .material-icons {
+        @content;
+    }
+}
+
+@mixin not-mobile {
+    @media only screen and (min-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin spin {
+    animation: rotateit 1.5s linear infinite;
+}
+
+@keyframes rotateit {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
