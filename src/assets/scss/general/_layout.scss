@@ -1,20 +1,21 @@
+html,
 body {
-  width: 100%;
+  min-height: 100% !important;
+  height: 100%;
   max-width: 100vw;
-  min-height: 100vh;
-  background: $white;
 }
 
 #root,
 .page-wrap {
   height: 100%;
-
 }
 
 .page-wrap {
   padding: 13px 13px;
   display: flex;
   flex-flow: column;
+  background: $white;
+
   border-left: $border-turquoise;
   border-right: $border-blue;
   border-bottom: $border-mauve;
@@ -323,6 +324,45 @@ span {
   &.mauve {
     &::before {
       background-color: rgba($mauve, 0.45);
+    }
+  }
+}
+
+div {
+  &.language-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    top: 26px;
+    right: 26px;
+
+    p {
+      margin: 0 6px;
+      color: $blue;
+      font-weight: normal;
+      line-height: 28px;
+      font-size: 1.3em;
+      letter-spacing: 0.2em;
+      transition: all ease-in-out 0.2s;
+      cursor: pointer;
+
+      &.active {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      &.separator {
+        color: $mauve;
+        font-weight: 900;
+        font-size: 25px;
+      }
+
+      &.inactive {
+        // color: darken($white, 5);
+        font-weight: 400;
+      }
     }
   }
 }
