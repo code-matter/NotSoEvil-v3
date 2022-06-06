@@ -230,53 +230,49 @@ body {
 
   &.cyan {
     color: $cyan;
-    background-color: rgba($cyan, 0.15);
     outline: 1px solid $cyan;
 
     &:hover,
     &:focus,
     &:active {
-      color: $cyan;
-      background-color: rgba($cyan, 0.1);
+      color: $white;
+      background-color: rgba($cyan, 0.8);
     }
   }
 
   &.mauve {
     color: $mauve;
-    background-color: rgba($mauve, 0.15);
     outline: 1px solid $mauve;
 
     &:hover,
     &:focus,
     &:active {
-      color: $mauve;
-      background-color: rgba($mauve, 0.1);
+      color: $white;
+      background-color: rgba($mauve, 0.8);
     }
   }
 
   &.yellow {
     color: $yellow;
-    background-color: rgba($yellow, 0.15);
     outline: 1px solid $yellow;
 
     &:hover,
     &:focus,
     &:active {
-      color: $yellow;
-      background-color: rgba($yellow, 0.1);
+      color: $white;
+      background-color: rgba($yellow, 0.8);
     }
   }
 
   &.light-blue {
     color: $light-blue;
-    background-color: rgba($light-blue, 0.15);
     outline: 1px solid $light-blue;
 
     &:hover,
     &:focus,
     &:active {
-      color: $light-blue;
-      background-color: rgba($light-blue, 0.1);
+      color: $white;
+      background-color: rgba($light-blue, 0.8);
     }
   }
 
