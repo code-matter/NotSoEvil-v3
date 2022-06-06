@@ -2,71 +2,83 @@ body,
 input,
 button,
 textarea {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: $font;
-    font-weight: 400;
-    color: $tc;
-    line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font;
+  font-weight: 400;
+  color: $tc;
+  line-height: 1.2;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.15em;
+  line-height: 35px;
 }
 
 h1 {
-    font-size: 42px;
-    font-weight: 900;
-    color: $grey;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 900;
+  color: $blue;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 
-    @include phone {
-        font-size: 34px;
-    }
+  @include phone {
+    font-size: 34px;
+  }
 }
 
 h2 {
-    font-size: 28px;
-    color: $lightgrey;
-    font-weight: 700;
-    margin-bottom: 20px;
-    &.darker {
-        color: $black;
-    }
+  font-size: 25px;
+  color: $blue;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  &.darker {
+    color: $black;
+  }
 }
 
 h3 {
-    font-size: 22px;
-    font-weight: 700;
+  color: rgba($blue, 0.38);
+  font-size: 20px;
+  font-weight: 700;
 }
 
 a {
-    font-weight: 900;
+  font-weight: 900;
+  color: $link;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+
+  &:hover {
     color: $link;
     text-decoration: underline;
-    transition: all 0.2s ease;
-
-    &:hover {
-        color: $link;
-        text-decoration: underline;
-        opacity: 0.8;
-    }
+    opacity: 0.8;
+  }
 }
 
 b {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .back-to {
-    font-size: 14px;
-    margin-bottom: 6px;
-    transform: translateX(-12px);
-    display: inline-block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  transform: translateX(-12px);
+  display: inline-block;
 
-    @include icon {
-        font-size: 12px;
-        margin-right: 4px;
-        transform: translateY(2px);
-    }
+  @include icon {
+    font-size: 12px;
+    margin-right: 4px;
+    transform: translateY(2px);
+  }
 }

@@ -1,7 +1,9 @@
+import Home from "pages/Home"
+
 export const routes = [
     {
-        title: "HOME",
-        component: <p>HOMEE</p>,
+        title: "Home",
+        component: <Home />,
         path: "/",
         protected: false,
     },

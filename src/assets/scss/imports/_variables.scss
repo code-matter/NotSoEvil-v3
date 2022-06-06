@@ -1,23 +1,30 @@
 $black: #464545;
 $grey: #727272;
 $lightgrey: #8c8c8c;
-$white: #fff;
+$white: #fbfbfd;
 
-$beige: #f8f6eb;
-$black: #464545;
-$green: #83a55a;
-$light-green: #bdcd9d;
+// $green: #83a55a;
 $turquoise: #7ab192;
 $red: #a62639;
 $burgundy: #a65e4b;
+$mauve: #c183ff;
+$blue: #4169df;
+$light-blue: #15b7ff;
+$lighter-blue: #a4e3ff;
+$turquoise: #a6f3eb;
+$cyan: #2de4d1;
+$yellow: #facd01;
+$light-yellow: #ffe77b;
+$pink: #ff7a9f;
+$light-pink: #ffdef2;
 
 $transparent-green: rgba(#83a55a, 0.25);
-$transparent-red: rgba(#f8b3a1, 0.2);
+$transparent-red: rgba(#ff7a9f, 0.2);
 
-$mc: $green;
+$mc: $pink ;
 $sc: $burgundy;
 
-$link: $green;
+$link: #83a55a;
 $tc: $grey;
 
 $radius: 18px;
@@ -26,9 +33,16 @@ $radius-sm: 14px;
 $radius-ex-sm: 12px;
 $flex-gap: 12px;
 
+$border-turquoise: 13px solid #a4e3ff;
+$border-blue: 13px solid #c8ebff;
+$border-yellow: 13px solid #ffe77b;
+$border-mauve: 13px solid #e1c3ff;
+
 $box-shadow: 0 6px 20px -1px rgba($black, 0.1);
 $box-shadow-active: 0 7px 20px -1px rgba($black, 0.15);
 $box-shadow-lighter: 0 6px 20px -1px rgba($black, 0.06);
 $box-shadow-big-item: 0 0 60px 0px rgba($black, 0.08);
 
-$font: 'Lato', sans-serif;
+$font: "Asap", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;

@@ -9,6 +9,7 @@ import AppRouter from "router"
 import { history } from "utils/history"
 import { ConfigProvider } from "antd"
 import fr_FR from "antd/lib/locale-provider/fr_FR"
+import "./i18n/i18n"
 
 import "antd/dist/antd.min.css"
 import "assets/scss/styles.scss"

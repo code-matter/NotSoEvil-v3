@@ -1,14 +1,14 @@
-import { Navigate } from "react-router-dom";
-import { ls } from "../../utils/storage";
+import { Navigate } from "react-router-dom"
+import { ls } from "utils/storage"
 
 const ProtectedRoute = ({ children }) => {
-	const user = ls.get("@user");
+    const user = ls.get("@user")
 
-	if (!user) {
-		return <Navigate to="/" replace />;
-	}
+    if (!user) {
+        return <Navigate to="/" replace />
+    }
 
-	return children;
-};
+    return children
+}
 
-export default ProtectedRoute;
+export default ProtectedRoute
