@@ -1,5 +1,6 @@
 import { Button, DatePicker } from "antd"
 import EvilLogo from "components/UI/EvilLogo"
+import SmileySun from "components/UI/SmileySun"
 import { BUTTON_COLORS } from "constants/colors"
 import { USERS_KEYS } from "constants/keys"
 import { UserContext } from "context/UserContext"
@@ -19,7 +20,10 @@ const Home = () => {
 
     return (
         <div className="home">
-            <EvilLogo />
+            <div className="home-logos">
+                <EvilLogo />
+                <SmileySun />
+            </div>
             <div className="text">
                 <h3>TATTOOS & PLENTY MORE</h3>
 

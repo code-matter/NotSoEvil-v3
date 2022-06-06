@@ -365,4 +365,38 @@ div {
       }
     }
   }
+
+  &.sun-smiley {
+
+    svg {
+      position: absolute;
+
+      &.sun {
+        bottom: -60px;
+        right: 50px;
+        width: 18%;
+
+        @include mobile {
+          width: 30%;
+          top: -15px;
+          right: 8px;
+        }
+      }
+
+      &.smiley {
+        bottom: -85px;
+        right: -12px;
+        width: 15%;
+        transform: rotate(12deg);
+        fill: #15b7ff;
+        stroke: #15b7ff;
+
+        @include mobile {
+          width: 28%;
+          top: 22px;
+          right: -10px;
+        }
+      }
+    }
+  }
 }
