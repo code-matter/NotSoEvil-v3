@@ -15,7 +15,7 @@ const AppRouter = () => {
         <UserContext.Provider value={{ userState, userDispatch }}>
             <ConfigProvider locale={userState.locale}>
                 <div className="page-wrap">
-                    <LanguageSelector />
+                    {/* <LanguageSelector /> */}
                     <div className="page-content">
                         <Routes history={history}>
                             {routes.map((r, idx) => {

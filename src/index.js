@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals"
 
 import moment from "moment"
 import "moment/locale/fr"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, HashRouter } from "react-router-dom"
 import AppRouter from "router"
 import { history } from "utils/history"
 import "./i18n/i18n"
@@ -17,9 +17,9 @@ moment.locale("fr")
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
     <React.StrictMode>
-        <BrowserRouter history={history}>
+        <HashRouter history={history}>
             <AppRouter />
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 )
 

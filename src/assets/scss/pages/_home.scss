@@ -1,6 +1,7 @@
 div.home {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   >* {
     margin: 20px 0;
@@ -23,11 +24,13 @@ div.home {
       grid-template-columns: 1fr 1fr;
       gap: 1px;
 
-      button {
-        flex-basis: 45%;
-        padding: 50px 30px;
+      button,
+      a {
+        padding: 50px 30px !important;
         font-size: 1.5rem;
+        text-decoration: none;
       }
+
     }
 
     &.text {}

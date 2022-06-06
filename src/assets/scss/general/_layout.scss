@@ -16,6 +16,7 @@ body {
 
 .page-wrap {
   height: 100%;
+  min-height: calc(100vh - 26px);
   padding: 13px 13px;
   display: flex;
   flex-flow: column;
@@ -206,6 +207,7 @@ body {
 }
 
 .ant-btn {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +215,6 @@ body {
   outline: 1px solid $pink;
   font-weight: 600;
   padding: 20px 40px;
-  height: 50px;
   box-shadow: none;
 
   color: $mc;
@@ -279,10 +280,10 @@ body {
     }
   }
 
-  &-link {
-    background-color: lighten($lightgrey, 48);
-    color: $lightgrey;
-  }
+  // &-link {
+  //   background-color: lighten($lightgrey, 48);
+  //   color: $lightgrey;
+  // }
 
   &-primary {
     text-shadow: none;
@@ -294,6 +295,7 @@ body {
     color: $lightgrey  !important;
   }
 }
+
 
 span {
   &.highlight {
@@ -335,8 +337,8 @@ div {
     align-items: center;
     width: fit-content;
     position: absolute;
-    top: 26px;
-    right: 26px;
+    top: 0px;
+    right: 0px;
 
     p {
       margin: 0 6px;
@@ -367,13 +369,12 @@ div {
   }
 
   &.sun-smiley {
-
     svg {
       position: absolute;
 
       &.sun {
         bottom: -60px;
-        right: 50px;
+        right: 62px;
         width: 18%;
 
         @include mobile {
@@ -385,7 +386,7 @@ div {
 
       &.smiley {
         bottom: -85px;
-        right: -12px;
+        right: 0px;
         width: 15%;
         transform: rotate(12deg);
         fill: #15b7ff;

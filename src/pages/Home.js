@@ -1,5 +1,6 @@
 import { Button, DatePicker } from "antd"
 import EvilLogo from "components/UI/EvilLogo"
+import LanguageSelector from "components/UI/LanguageSelector"
 import SmileySun from "components/UI/SmileySun"
 import { BUTTON_COLORS } from "constants/colors"
 import { USERS_KEYS } from "constants/keys"
@@ -20,6 +21,7 @@ const Home = () => {
 
     return (
         <div className="home">
+            <LanguageSelector />
             <div className="home-logos">
                 <EvilLogo />
                 <SmileySun />
@@ -35,6 +37,8 @@ const Home = () => {
             </div>
             <div className="btn-container">
                 <Button
+                    href="/#/booking"
+                    type="link"
                     className={`${rdvHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setRdvHover(true)}
                     onMouseLeave={() => setRdvHover(false)}
@@ -42,6 +46,8 @@ const Home = () => {
                     {t("general.rdv")}
                 </Button>
                 <Button
+                    href="/#/flash"
+                    type="link"
                     className={`${flashHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setFlashHover(true)}
                     onMouseLeave={() => setFlashHover(false)}
@@ -49,6 +55,8 @@ const Home = () => {
                     FLASH
                 </Button>
                 <Button
+                    href="/#/shop"
+                    type="link"
                     className={`${shopHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setShopHover(true)}
                     onMouseLeave={() => setShopHover(false)}
@@ -56,6 +64,8 @@ const Home = () => {
                     {t("general.shop")}
                 </Button>
                 <Button
+                    href="/#/moremoremore"
+                    type="link"
                     className={`${moreHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setMoreHover(true)}
                     onMouseLeave={() => setMoreHover(false)}

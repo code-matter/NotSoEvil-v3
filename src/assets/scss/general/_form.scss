@@ -209,91 +209,91 @@ form,
     }
   }
 
-  .ant-btn {
-    border-radius: $radius-sm;
-    border: none;
-    font-weight: 700;
-    padding: 0 20px;
-    height: 46px;
-    box-shadow: none;
+  // .ant-btn {
+  //   border-radius: $radius-sm;
+  //   border: none;
+  //   font-weight: 700;
+  //   padding: 0 20px;
+  //   height: 46px;
+  //   box-shadow: none;
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   align-items: center;
 
-    color: $grey;
-    background-color: rgba($grey, 0.1);
+  //   color: $grey;
+  //   background-color: rgba($grey, 0.1);
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: $grey;
-      background-color: rgba($grey, 0.05);
-    }
+  //   &:hover,
+  //   &:focus,
+  //   &:active {
+  //     color: $grey;
+  //     background-color: rgba($grey, 0.05);
+  //   }
 
-    &.turquoise {
-      color: $turquoise;
-      background-color: rgba($turquoise, 0.15);
+  //   &.turquoise {
+  //     color: $turquoise;
+  //     background-color: rgba($turquoise, 0.15);
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: $turquoise;
-        background-color: rgba($turquoise, 0.1);
-      }
-    }
+  //     &:hover,
+  //     &:focus,
+  //     &:active {
+  //       color: $turquoise;
+  //       background-color: rgba($turquoise, 0.1);
+  //     }
+  //   }
 
-    &.green {
-      color: $mc;
-      background-color: rgba($mc, 0.15);
+  //   &.green {
+  //     color: $mc;
+  //     background-color: rgba($mc, 0.15);
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: $mc;
-        background-color: rgba($mc, 0.1);
-      }
-    }
+  //     &:hover,
+  //     &:focus,
+  //     &:active {
+  //       color: $mc;
+  //       background-color: rgba($mc, 0.1);
+  //     }
+  //   }
 
-    &.red {
-      color: $red;
-      background-color: rgba($red, 0.15);
+  //   &.red {
+  //     color: $red;
+  //     background-color: rgba($red, 0.15);
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: $red;
-        background-color: rgba($red, 0.1);
-      }
-    }
+  //     &:hover,
+  //     &:focus,
+  //     &:active {
+  //       color: $red;
+  //       background-color: rgba($red, 0.1);
+  //     }
+  //   }
 
-    &-link {
-      background-color: lighten($lightgrey, 48);
-      color: $lightgrey;
-    }
+  //   &-link {
+  //     background-color: lighten($lightgrey, 48);
+  //     color: $lightgrey;
+  //   }
 
-    &-primary {
-      text-shadow: none;
-      box-shadow: none;
-    }
+  //   &-primary {
+  //     text-shadow: none;
+  //     box-shadow: none;
+  //   }
 
-    &[disabled] {
-      background-color: rgba($grey, 0.05) !important;
-      color: $lightgrey  !important;
-    }
+  //   &[disabled] {
+  //     background-color: rgba($grey, 0.05) !important;
+  //     color: $lightgrey  !important;
+  //   }
 
-    @include icon {
-      font-size: 16px;
+  //   @include icon {
+  //     font-size: 16px;
 
-      &:first-child {
-        margin-right: 10px;
-      }
+  //     &:first-child {
+  //       margin-right: 10px;
+  //     }
 
-      &:last-child {
-        margin-left: 16px;
-      }
-    }
-  }
+  //     &:last-child {
+  //       margin-left: 16px;
+  //     }
+  //   }
+  // }
 
   .ant-upload-list-item {
     height: 40px;

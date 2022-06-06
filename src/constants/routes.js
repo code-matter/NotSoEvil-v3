@@ -8,6 +8,12 @@ export const routes = [
         protected: false,
     },
     {
+        title: "Home",
+        component: <p>BOOKING</p>,
+        path: "/booking",
+        protected: false,
+    },
+    {
         title: "Erreur 404",
         component: <p>ERROR</p>,
         path: "*",
