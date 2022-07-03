@@ -46,6 +46,7 @@
     "form": {
         "firstName": "Prénom",
         "lastName": "Nom",
+        "pronouns": "Pronoms",
         "email": "Courriel",
         "language": "Langue(s)",
         "lang-fr": "Français",

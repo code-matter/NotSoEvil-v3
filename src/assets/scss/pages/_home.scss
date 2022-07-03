@@ -1,20 +1,8 @@
 div.home {
     display: flex;
     flex-direction: column;
-    position: relative;
 
     div {
-        &.home-logos {
-            display: flex;
-            width: auto;
-            position: relative;
-
-            svg {
-                margin-top: 10px;
-                max-width: 350px;
-            }
-        }
-
         &.btn-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -28,7 +16,5 @@ div.home {
             }
 
         }
-
-        &.text {}
     }
 }

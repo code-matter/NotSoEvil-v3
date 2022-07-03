@@ -1,3 +1,4 @@
+import Booking from "pages/Booking"
 import Home from "pages/Home"
 import Login from "pages/Login"
 
@@ -10,7 +11,7 @@ export const routes = [
     },
     {
         title: "Home",
-        component: () => null,
+        component: Booking,
         path: "/booking",
         protected: false,
     },

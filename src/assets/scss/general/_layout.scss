@@ -241,7 +241,8 @@ body {
         }
     }
 
-    &.cyan {
+    &.cyan,
+    -primary {
         color: $cyan;
         outline: 1px solid $cyan;
 
@@ -341,6 +342,16 @@ span {
 }
 
 div {
+    &.form-items-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        >* {
+            width: 100%;
+        }
+    }
+
     &.language-select {
         z-index: 999;
         display: flex;

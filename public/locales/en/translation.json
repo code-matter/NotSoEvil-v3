@@ -46,6 +46,7 @@
     "form": {
         "firstName": "First Name",
         "lastName": "Last Name",
+        "pronouns": "Pronouns",
         "email": "Email",
         "language": "Language(s)",
         "lang-fr": "French",

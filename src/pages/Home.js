@@ -1,6 +1,7 @@
 import { Button } from "antd"
 import EvilLogo from "components/UI/EvilLogo"
 import LanguageSelector from "components/UI/LanguageSelector"
+import Logos from "components/UI/Logos"
 import SmileySun from "components/UI/SmileySun"
 import { BUTTON_COLORS } from "constants/colors"
 import { useState } from "react"
@@ -17,10 +18,11 @@ const Home = () => {
     return (
         <div className="home">
             <LanguageSelector />
-            <div className="home-logos">
+            <Logos />
+            {/* <div className="home-logos">
                 <EvilLogo />
                 <SmileySun />
-            </div>
+            </div> */}
             <div className="text">
                 <h3>TATTOOS & PLENTY MORE</h3>
 

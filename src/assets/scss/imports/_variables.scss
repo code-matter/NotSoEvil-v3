@@ -4,6 +4,7 @@ $lightgrey: #8c8c8c;
 $white: #fbfbfd;
 
 // $green: #83a55a;
+$darkBlue: #201262;
 $turquoise: #7ab192;
 $red: #a62639;
 $burgundy: #a65e4b;
@@ -17,6 +18,10 @@ $yellow: #facd01;
 $light-yellow: #ffe77b;
 $pink: #ff7a9f;
 $light-pink: #ffdef2;
+$label-color: $darkBlue;
+$sublabel-color: #9590af;
+$light-gray: #ececec;
+$colors: #15b7ff, #2de4d1, #ff7a9f, #facd01;
 
 $transparent-green: rgba(#83a55a, 0.25);
 $transparent-red: rgba(#ff7a9f, 0.2);
@@ -30,7 +35,7 @@ $tc: $grey;
 $radius: 18px;
 $radius-lg: 30px;
 $radius-sm: 14px;
-$radius-ex-sm: 12px;
+$radius-ex-sm: 6px;
 $flex-gap: 12px;
 
 $border-turquoise: 13px solid #a4e3ff;
@@ -44,5 +49,5 @@ $box-shadow-lighter: 0 6px 20px -1px rgba($black, 0.06);
 $box-shadow-big-item: 0 0 60px 0px rgba($black, 0.08);
 
 $font: "Asap", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;

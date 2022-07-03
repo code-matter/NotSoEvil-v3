@@ -2,50 +2,56 @@ form,
 .ant-form,
 .form,
 .form-wrap {
-  label {
-    color: $lightgrey;
-    font-weight: 700;
-    font-size: 14px;
-  }
-
-  .ant-form-item-label {
-    padding-bottom: 6px;
-  }
-
-  .ant-form-item-with-help .ant-form-item-explain {
-    padding: 2px 0 12px 12px;
-  }
-
-  .ant-form-item-explain {
-    padding: 0 0 0 12px;
-
-    &-error {
-      color: $red;
-      font-size: 12px;
-      line-height: 1.4;
+    label {
+        color: $lightgrey;
+        font-weight: 700;
+        font-size: 14px;
     }
-  }
 
-  .error {
-    color: $red;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: right;
-    width: 100%;
-    display: block;
-    margin-top: 20px;
-  }
+    .ant-form-item-label {
+        padding-bottom: 6px;
+
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $darkBlue;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    .ant-form-item-with-help .ant-form-item-explain {
+        padding: 2px 0 12px 12px;
+    }
+
+    .ant-form-item-explain {
+        padding: 0 0 0 12px;
+
+        &-error {
+            color: $red;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    }
+
+    .error {
+        color: $red;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: right;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
 }
 
 .form-modal {}
 
-.body {
-
-  .ant-input,
-  .ant-input-password,
-  .ant-select,
-  .ant-picker,
-  .ant-input-number input {
+.ant-input,
+.ant-input-password,
+.ant-select,
+.ant-picker,
+.ant-input-number,
+input {
     font-size: 14px;
     font-weight: 700;
     color: $grey;
@@ -59,287 +65,295 @@ form,
     padding: 4px 16px;
 
     &[disabled] {
-      background-color: rgba($grey, 0.04) !important;
-      color: $lightgrey  !important;
+        background-color: rgba($grey, 0.04) !important;
+        color: $lightgrey  !important;
     }
-  }
 
-  .ant-form-item-has-error {
+    &:focus {
+        background-color: rgba(#4253aa, 0.2);
+        color: $label-color;
+        box-shadow: 0 0 0 2px transparentize($blue, 0.6);
+    }
+
+}
+
+.ant-form-item-has-error {
 
     .ant-input,
     .ant-input-password,
     .ant-select,
     .ant-picker,
     .ant-input-number input {
-      background-color: rgba($grey, 0.1);
+        background-color: rgba($grey, 0.1);
+        box-shadow: 0 0 0 2px transparentize($pink, 0.6);
     }
-  }
+}
 
-  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
-  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
     background-color: rgba($grey, 0.1);
-  }
+}
 
-  .ant-input-affix-wrapper>input.ant-input {
+.ant-input-affix-wrapper>input.ant-input {
     background: none;
     height: auto;
     border-radius: 0;
     padding: 0;
     box-shadow: none;
-  }
+}
 
-  .buttons {
+.buttons {
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
 
     .ant-btn:not(:last-of-type) {
-      margin-right: 12px;
+        margin-right: 12px;
     }
-  }
+}
 
-  .ant-radio-group {
+.ant-radio-group {
     display: flex;
     flex-flow: column;
 
     .ant-radio {
-      &-wrapper {
-        background-color: rgba($grey, 0.04);
-        border-radius: $radius-ex-sm;
-        padding: 10px 18px;
-        margin-bottom: 4px;
-        transition: all 0.2s ease;
+        &-wrapper {
+            background-color: rgba($grey, 0.04);
+            border-radius: $radius-ex-sm;
+            padding: 10px 18px;
+            margin-bottom: 4px;
+            transition: all 0.2s ease;
 
-        &-checked {
-          background-color: rgba($sc, 0.1);
-        }
-      }
-
-      +* {
-        padding-left: 16px;
-        color: $grey;
-      }
-
-      &-checked {
-        .ant-radio-inner {
-          border-color: $sc;
-
-          &:after {
-            background-color: $sc;
-          }
+            &-checked {
+                background-color: rgba($sc, 0.1);
+            }
         }
 
         +* {
-          color: $sc;
+            padding-left: 16px;
+            color: $grey;
         }
-      }
-    }
-  }
 
-  .ant-picker {
+        &-checked {
+            .ant-radio-inner {
+                border-color: $sc;
+
+                &:after {
+                    background-color: $sc;
+                }
+            }
+
+            +* {
+                color: $sc;
+            }
+        }
+    }
+}
+
+.ant-picker {
     &-suffix {
-      margin-left: 16px;
+        margin-left: 16px;
     }
 
     &-clear {
-      background: none;
-      right: 36px;
-      transform: translateY(-50%) scale(0.8);
+        background: none;
+        right: 36px;
+        transform: translateY(-50%) scale(0.8);
     }
-  }
+}
 
-  .ant-select {
+.ant-select {
     padding: 0;
 
     .ant-select-selector {
-      padding: 4px 16px 4px 12px;
-      height: 100%;
-      border: none;
-      background: none;
-      border-radius: $radius-ex-sm;
-      background: transparent !important;
+        padding: 4px 16px 4px 12px;
+        height: 100%;
+        border: none;
+        background: none;
+        border-radius: $radius-ex-sm;
+        background: transparent !important;
     }
 
     .ant-select-selection-item {
-      background: $white;
-      border-radius: 4px;
-      height: 24px;
-      line-height: 22px;
-      font-size: 12px;
+        background: $white;
+        border-radius: 4px;
+        height: 24px;
+        line-height: 22px;
+        font-size: 12px;
     }
 
     &-single {
-      .ant-select-selector {
-        padding: 4px 16px !important;
-      }
-
-      .ant-select-selection {
-        &-item {
-          background: none;
-          border-radius: 0;
-          line-height: inherit;
-          height: 34px;
-          line-height: 34px;
-          font-size: 14px;
-          font-weight: 700;
+        .ant-select-selector {
+            padding: 4px 16px !important;
         }
 
-        &-search {
-          left: 16px;
+        .ant-select-selection {
+            &-item {
+                background: none;
+                border-radius: 0;
+                line-height: inherit;
+                height: 34px;
+                line-height: 34px;
+                font-size: 14px;
+                font-weight: 700;
+            }
 
-          &-input {
-            height: 100% !important;
-          }
+            &-search {
+                left: 16px;
+
+                &-input {
+                    height: 100% !important;
+                }
+            }
         }
-      }
     }
 
     &-sm {
-      height: 32px;
+        height: 32px;
 
-      .ant-select-selector {
-        height: 32px !important;
-        padding: 5px 12px !important;
-      }
+        .ant-select-selector {
+            height: 32px !important;
+            padding: 5px 12px !important;
+        }
     }
 
     .ant-select-clear {
-      background: none;
-      right: 28px;
+        background: none;
+        right: 28px;
     }
-  }
+}
 
-  // .ant-btn {
-  //   border-radius: $radius-sm;
-  //   border: none;
-  //   font-weight: 700;
-  //   padding: 0 20px;
-  //   height: 46px;
-  //   box-shadow: none;
+// .ant-btn {
+//   border-radius: $radius-sm;
+//   border: none;
+//   font-weight: 700;
+//   padding: 0 20px;
+//   height: 46px;
+//   box-shadow: none;
 
-  //   display: flex;
-  //   justify-content: flex-start;
-  //   align-items: center;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
 
-  //   color: $grey;
-  //   background-color: rgba($grey, 0.1);
+//   color: $grey;
+//   background-color: rgba($grey, 0.1);
 
-  //   &:hover,
-  //   &:focus,
-  //   &:active {
-  //     color: $grey;
-  //     background-color: rgba($grey, 0.05);
-  //   }
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     color: $grey;
+//     background-color: rgba($grey, 0.05);
+//   }
 
-  //   &.turquoise {
-  //     color: $turquoise;
-  //     background-color: rgba($turquoise, 0.15);
+//   &.turquoise {
+//     color: $turquoise;
+//     background-color: rgba($turquoise, 0.15);
 
-  //     &:hover,
-  //     &:focus,
-  //     &:active {
-  //       color: $turquoise;
-  //       background-color: rgba($turquoise, 0.1);
-  //     }
-  //   }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       color: $turquoise;
+//       background-color: rgba($turquoise, 0.1);
+//     }
+//   }
 
-  //   &.green {
-  //     color: $mc;
-  //     background-color: rgba($mc, 0.15);
+//   &.green {
+//     color: $mc;
+//     background-color: rgba($mc, 0.15);
 
-  //     &:hover,
-  //     &:focus,
-  //     &:active {
-  //       color: $mc;
-  //       background-color: rgba($mc, 0.1);
-  //     }
-  //   }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       color: $mc;
+//       background-color: rgba($mc, 0.1);
+//     }
+//   }
 
-  //   &.red {
-  //     color: $red;
-  //     background-color: rgba($red, 0.15);
+//   &.red {
+//     color: $red;
+//     background-color: rgba($red, 0.15);
 
-  //     &:hover,
-  //     &:focus,
-  //     &:active {
-  //       color: $red;
-  //       background-color: rgba($red, 0.1);
-  //     }
-  //   }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       color: $red;
+//       background-color: rgba($red, 0.1);
+//     }
+//   }
 
-  //   &-link {
-  //     background-color: lighten($lightgrey, 48);
-  //     color: $lightgrey;
-  //   }
+//   &-link {
+//     background-color: lighten($lightgrey, 48);
+//     color: $lightgrey;
+//   }
 
-  //   &-primary {
-  //     text-shadow: none;
-  //     box-shadow: none;
-  //   }
+//   &-primary {
+//     text-shadow: none;
+//     box-shadow: none;
+//   }
 
-  //   &[disabled] {
-  //     background-color: rgba($grey, 0.05) !important;
-  //     color: $lightgrey  !important;
-  //   }
+//   &[disabled] {
+//     background-color: rgba($grey, 0.05) !important;
+//     color: $lightgrey  !important;
+//   }
 
-  //   @include icon {
-  //     font-size: 16px;
+//   @include icon {
+//     font-size: 16px;
 
-  //     &:first-child {
-  //       margin-right: 10px;
-  //     }
+//     &:first-child {
+//       margin-right: 10px;
+//     }
 
-  //     &:last-child {
-  //       margin-left: 16px;
-  //     }
-  //   }
-  // }
+//     &:last-child {
+//       margin-left: 16px;
+//     }
+//   }
+// }
 
-  .ant-upload-list-item {
+.ant-upload-list-item {
     height: 40px;
 
     &-info {
-      padding: 0 16px;
+        padding: 0 16px;
     }
 
     &-card-actions {
-      .ant-btn {
-        padding: 0;
-        width: unset;
-        height: unset;
-        background: none !important;
+        .ant-btn {
+            padding: 0;
+            width: unset;
+            height: unset;
+            background: none !important;
 
-        @include icon {
-          margin-right: 0;
+            @include icon {
+                margin-right: 0;
+            }
         }
-      }
     }
-  }
 }
 
-.select-option-custom {
-  b {
-    font-weight: 700;
-    color: $grey;
-  }
 
-  small {
-    display: block;
-    font-size: 12px;
-    color: $lightgrey;
-    line-height: 1.2;
-  }
+.select-option-custom {
+    b {
+        font-weight: 700;
+        color: $grey;
+    }
+
+    small {
+        display: block;
+        font-size: 12px;
+        color: $lightgrey;
+        line-height: 1.2;
+    }
 }
 
 .steps-action {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @include phone {
 
-  .ant-form .ant-form-item .ant-form-item-label,
-  .ant-form .ant-form-item .ant-form-item-control {
-    flex: unset;
-  }
+    .ant-form .ant-form-item .ant-form-item-label,
+    .ant-form .ant-form-item .ant-form-item-control {
+        flex: unset;
+    }
 }
