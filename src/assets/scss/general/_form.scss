@@ -2,21 +2,20 @@ form,
 .ant-form,
 .form,
 .form-wrap {
+    // display: flex;
+    // // align-items: center;
+    // // justify-content: center;
+    // flex-direction: column;
+
     label {
-        color: $lightgrey;
-        font-weight: 700;
-        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $darkBlue;
+        letter-spacing: 0.1em;
     }
 
     .ant-form-item-label {
         padding-bottom: 6px;
-
-        label {
-            text-transform: uppercase;
-            font-weight: 600;
-            color: $darkBlue;
-            letter-spacing: 0.1em;
-        }
     }
 
     .ant-form-item-with-help .ant-form-item-explain {
@@ -41,6 +40,12 @@ form,
         width: 100%;
         display: block;
         margin-top: 20px;
+    }
+
+    .ant-btn {
+        @include phone {
+            width: 100%;
+        }
     }
 }
 

@@ -1,10 +1,7 @@
-import { Button, Form, Input } from 'antd'
+import { Button, Checkbox, Form, Input } from 'antd'
 import { useForm } from 'antd/lib/form/Form'
-import EvilLogo from 'components/UI/EvilLogo'
 import LanguageSelector from 'components/UI/LanguageSelector'
 import Logos from 'components/UI/Logos'
-import SmileySun from 'components/UI/SmileySun'
-import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { rules } from 'utils/forms'
 
@@ -39,6 +36,9 @@ const Booking = (props: IBooking) => {
                         <Input />
                     </Form.Item>
                 </div>
+                <Form.Item name="language" label={t('form.language')}>
+                    <Checkbox.Group options={[{ label: t("form.lang-fr"), value: "fr" }, { label: t("form.lang-en"), value: "en" }]} />
+                </Form.Item>
                 <Button type="primary" htmlType='submit'>Send</Button>
             </Form>
         </div>
