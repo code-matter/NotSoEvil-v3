@@ -1,21 +1,28 @@
 import Home from "pages/Home"
+import Login from "pages/Login"
 
 export const routes = [
     {
         title: "Home",
-        component: <Home />,
+        component: Home,
         path: "/",
         protected: false,
     },
     {
         title: "Home",
-        component: <p>BOOKING</p>,
+        component: () => null,
         path: "/booking",
         protected: false,
     },
     {
+        title: "Login",
+        component: Login,
+        path: "/login",
+        protected: false,
+    },
+    {
         title: "Erreur 404",
-        component: <p>ERROR</p>,
+        component: () => <h2>ERROR!!!!!!</h2>,
         path: "*",
         protected: false,
     },

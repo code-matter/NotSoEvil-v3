@@ -3,7 +3,7 @@ import EvilLogo from "components/UI/EvilLogo"
 import LanguageSelector from "components/UI/LanguageSelector"
 import SmileySun from "components/UI/SmileySun"
 import { BUTTON_COLORS } from "constants/colors"
-import React, { useState } from "react"
+import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { Random } from "utils/random"
 
@@ -33,7 +33,6 @@ const Home = () => {
             <div className="btn-container">
                 <Button
                     href="/#/booking"
-                    type="link"
                     className={`${rdvHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setRdvHover(true)}
                     onMouseLeave={() => setRdvHover(false)}
@@ -42,7 +41,6 @@ const Home = () => {
                 </Button>
                 <Button
                     href="/#/flash"
-                    type="link"
                     className={`${flashHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setFlashHover(true)}
                     onMouseLeave={() => setFlashHover(false)}
@@ -51,7 +49,6 @@ const Home = () => {
                 </Button>
                 <Button
                     href="/#/shop"
-                    type="link"
                     className={`${shopHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setShopHover(true)}
                     onMouseLeave={() => setShopHover(false)}
@@ -60,7 +57,6 @@ const Home = () => {
                 </Button>
                 <Button
                     href="/#/moremoremore"
-                    type="link"
                     className={`${moreHover ? Random.List(BUTTON_COLORS).color : ""}`}
                     onMouseEnter={() => setMoreHover(true)}
                     onMouseLeave={() => setMoreHover(false)}

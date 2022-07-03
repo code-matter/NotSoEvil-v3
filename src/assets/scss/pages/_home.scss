@@ -1,38 +1,34 @@
 div.home {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-  >* {
-    margin: 20px 0;
-  }
+    div {
+        &.home-logos {
+            display: flex;
+            width: auto;
+            position: relative;
 
+            svg {
+                margin-top: 10px;
+                max-width: 350px;
+            }
+        }
 
-  div {
-    &.home-logos {
-      display: flex;
-      position: relative;
+        &.btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
 
-      svg {
-        margin-top: 10px;
-        max-width: 350px;
-      }
+            button,
+            a {
+                padding: 50px 30px !important;
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+
+        }
+
+        &.text {}
     }
-
-    &.btn-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1px;
-
-      button,
-      a {
-        padding: 50px 30px !important;
-        font-size: 1.5rem;
-        text-decoration: none;
-      }
-
-    }
-
-    &.text {}
-  }
 }

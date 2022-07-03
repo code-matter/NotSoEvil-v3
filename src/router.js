@@ -3,37 +3,39 @@ import ProtectedRoute from "./components/routes/ProtectedRoute"
 import { history } from "./utils/history"
 import { routes } from "./constants/routes"
 import { ConfigProvider } from "antd"
-import { useReducer } from "react"
-import { userInitialstate, userReducer } from "reducers/UserReducer"
-import { UserContext } from "context/UserContext"
-import LanguageSelector from "components/UI/LanguageSelector"
+import { useTranslation } from "react-i18next"
+import enUS from "antd/lib/locale/en_US"
+import frFR from "antd/lib/locale-provider/fr_FR"
+import "moment/locale/fr"
 
 const AppRouter = () => {
-    const [userState, userDispatch] = useReducer(userReducer, userInitialstate)
+    const { i18n } = useTranslation()
 
     return (
-        <UserContext.Provider value={{ userState, userDispatch }}>
-            <ConfigProvider locale={userState.locale}>
-                <div className="page-wrap">
-                    {/* <LanguageSelector /> */}
-                    <div className="page-content">
-                        <Routes history={history}>
-                            {routes.map((r, idx) => {
-                                return r.protected ? (
-                                    <Route
-                                        key={idx}
-                                        path={r.path}
-                                        element={<ProtectedRoute>{r.component}</ProtectedRoute>}
-                                    />
-                                ) : (
-                                    <Route key={idx} path={r.path} element={r.component} />
-                                )
-                            })}
-                        </Routes>
-                    </div>
+        <ConfigProvider locale={i18n?.language?.includes("fr") ? frFR : enUS}>
+            <div className="page-wrap">
+                <div className="page-content">
+                    <Routes history={history}>
+                        {routes.map((r, idx) => {
+                            const Component = r.component
+                            return r.protected ? (
+                                <Route
+                                    key={idx}
+                                    path={r.path}
+                                    element={
+                                        <ProtectedRoute>
+                                            <Component />
+                                        </ProtectedRoute>
+                                    }
+                                />
+                            ) : (
+                                <Route key={idx} path={r.path} element={<Component />} />
+                            )
+                        })}
+                    </Routes>
                 </div>
-            </ConfigProvider>
-        </UserContext.Provider>
+            </div>
+        </ConfigProvider>
     )
 }
 
